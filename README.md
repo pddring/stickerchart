@@ -1,9 +1,9 @@
-# stickerchart
-Potty training sticker chart. Try it here: [tools.withcode.uk/sticker](tools.withcode.uk/sticker)
+# StickerChart
+This is the source code for [tools.withcode.uk/sticker](tools.withcode.uk/sticker) which I cobbled together as a digital sticker chart for potty training. I've shared it here in the hope that it may be useful for someone else to use or adapt.
 
 ![Stickerchart logo](https://lh3.googleusercontent.com/I_93q6iWrjXxMshlZyB-uJ-07eSVxlTXRVULjOl152NHk462Uw0dPHq7373j5PDMig=w300-rw)
 
-This is the source code for [tools.withcode.uk/sticker](tools.withcode.uk/sticker) which I cobbled together as a digital sticker chart for potty training. 
+
 
 The idea is to display it somewhere highly visible (e.g smart TV) whilst potty training to help motivate and reward (bribe) a toddler and avoid accidents. 
 
