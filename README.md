@@ -13,4 +13,6 @@ This code is published under MIT license which means you can adapt it and use it
 
 This code uses copyright free images but includes the JQuery library which is also published under the MIT license: https://jquery.org/license/
 
-You can also download a free (and ad-free) android app [here](https://play.google.com/store/apps/details?id=com.pddring.stickerchart): 
+You can download a free (and ad-free) android app [here](https://play.google.com/store/apps/details?id=com.pddring.stickerchart)
+
+Find out more here: [http://blog.withcode.uk/2017/08/free-potty-training-chart-ad-free-open-source-app-now-on-android/](http://blog.withcode.uk/2017/08/free-potty-training-chart-ad-free-open-source-app-now-on-android/)
