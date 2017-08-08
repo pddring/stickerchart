@@ -1,0 +1,158 @@
+/* CSS Document */
+
+@keyframes wiggle {
+	from {transform: translate(-50%, -50%) rotate(-15deg);}
+	to {transform: translate(-50%, -50%) rotate(15deg);}
+}
+
+@keyframes choochoo {
+	from {transform: translate(-50%, -50%)}
+	to {transform: translate(-50%, -60%)}
+}
+
+@keyframes littlewiggle {
+	from {transform: translate(-50%, -50%) rotate(-5deg);}
+	to {transform: translate(-50%, -50%) rotate(5deg);}
+}
+
+@font-face {
+    font-family: Chewy;
+    src: url('Chewy.ttf') format('truetype');
+}
+
+body,html {
+	font-family: 'Chewy';
+	overflow: hidden;
+}
+
+input, button {
+    font-family: 'Chewy';
+    text-align: center;
+    font-size: 1em;
+}
+
+#map {
+	position: absolute;
+	top: 0px;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;	
+	background-image: url('island.jpg');
+	background-size: 100% 100%;
+}
+
+.star {
+	position: absolute;
+	width: 100px;
+	height: 100px;
+	max-width: 10vw;
+	max-height: 10vw;
+	background-image: url('star.png');
+	background-size: 100% 100%;
+	opacity: 0.4;
+    transform: translate(-50%, -50%) scale(0.7);
+    filter: grayscale(100%);
+}
+
+.smallprize {
+	background-image: url('smarties.png');
+}
+
+.bigprize {
+	background-image: url('present.png');
+}
+
+
+.star:hover {
+	transition: all 0.5s;
+	animation: wiggle 0.5s ease-in-out 0s infinite alternate;
+}
+
+.selected {
+	opacity: 0.9;
+    transform: translate(-50%, -50%) scale(1.0);
+    animation: littlewiggle 0.5s ease-in-out 0s infinite alternate;
+    filter: grayscale(0%);
+}
+
+#stickerCount {
+	position: absolute;
+	bottom: 30px;
+	left: 10px;
+	background: rgba(255,255,255,0.5);
+	border-radius: 10px;
+	margin: 10px;
+	padding: 10px;
+	text-align: center;
+}
+
+.value {
+	font-size: 3em;
+}
+
+#name {
+	position: absolute;
+	top: 10px;
+	width: 100%;
+	text-align: center;
+	font-size: 2em;
+	color: #FFF;
+	text-shadow: 2px 2px 2px #000;
+}
+
+#train {
+	position: absolute;
+	width: 50px;
+	height: 50px;
+	max-width: 10vw;
+	max-height: 10vw;
+	background-image: url('train.png');
+	background-size: 100% 100%;
+	transition: all 1s;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    animation: choochoo 0.5s ease-in-out 0s infinite alternate;
+}
+
+.block {
+	position: absolute;
+	background-color: rgba(255,255,255,0.8);
+	border-radius: 10px;
+	margin: 20px;
+	padding: 20px;
+	top: 3em;
+	left: 0px;
+	right: 0px;
+}
+
+#tips {
+	position: absolute;
+	padding: 1em;
+	margin: 1em;
+	background-color: rgba(255,255,255,0.5);
+	bottom: 30px;
+	right: 0px;
+	border-radius: 10px;
+	max-width: 80%;
+	text-align: center;
+}
+
+#tips .value {
+	max-height: 3em;
+}
+
+#btnTips {
+	width: 100px;
+	height: 100px;
+	max-width: 10vw;
+	max-height: 10vw;
+	background-image: url('tips.png');
+	background-size: cover;
+	display: inline-block;
+	float: right;
+	border-radius: 50px;
+	transition: all 0.5s;
+}
+#btnTips:hover {
+	background-color: #FF0;
+}
